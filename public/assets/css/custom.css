@@ -1,0 +1,420 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.text-none {
+    text-decoration: none;
+    color: black;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    color: white !important;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.nav-link {
+    margin-right: 20px;
+}
+
+.nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #0069D9;
+    width: 25px;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+a.nav-link-text {
+    margin-right: 15px;
+    text-decoration: none;
+    cursor: text;
+}
+
+.sticky.navbar {
+    position: fixed;
+    transition: ease-in-out .5s;
+}
+
+/* Content */
+.container {
+    max-width: 1000px;
+}
+
+.pricing-header {
+    max-width: 900px;
+}
+
+.pricing-header .display-4 {
+    margin-top: 60px;
+}
+
+.pricing-header .lead {
+    margin-bottom: 60px;
+}
+
+.pricing-header .lead span {
+    font-weight: 600;
+}
+
+.card-deck .card {
+    min-width: 220px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(../images/jumbo.jpg);
+    background-size: cover;
+    height: 655px;
+    text-align: center;
+    position: relative;
+    background-position: 0 -100px;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    margin-top: 150px;
+    color: white;
+    font-weight: 200;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
+    margin-bottom: 30px;
+    font-size: 62px;
+    max-height: 640px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+/* Utility */
+.tombol {
+    border-radius: 100px;
+    font-size: 14px;
+}
+
+/* Info Panel */
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    margin-top: -215px;
+    background-color: white;
+    padding: 20px;
+    height: 118px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 4px;
+}
+
+.col-9 .map {
+    position: relative;
+    left: 9px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p {
+    font-size: 15px;
+    color: #606060;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+/* Login */
+.table {
+    display: table;
+    height: 100%;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    align-self: center;
+}
+
+.user-accounts-alt__separator {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.user-accounts-hline {
+    display: inline-block;
+    border: .5px solid rgba(0, 0, 0, .12);
+    width: 50%;
+}
+
+.user-accounts-alt__separator-text {
+    font-size: 12px;
+    text-align: center;
+    color: rgba(0, 0, 0, .38);
+    padding: 0 18px;
+    white-space: nowrap;
+}
+
+/* Form Validasi */
+.v-form {
+    width: 100%;
+    height: 150px;
+    border: 1.5px dashed #606060;
+}
+
+.v-form p {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 150px;
+    color: #606060;
+}
+
+.v-form input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 265px;
+    height: 149px;
+    outline: none;
+    opacity: 0;
+}
+
+/* Footer */
+#footer {
+    margin-top: 40px !important;
+    color: #f7f7f7;
+    margin-bottom: 0px !important;
+    position: relative;
+    width: 100%;
+}
+
+#footer p {
+    margin-bottom: .25rem;
+}
+
+/* GALLERY */
+img.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card.img {
+    border-radius: 5px;
+}
+
+.gallery-container {
+    margin-top: 65px;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 18px;
+    color: #85878c;
+}
+
+/* Styles for the gallery */
+.row-gal {
+    margin-top: 25px;
+}
+
+.tz-gallery {
+    padding: 10px;
+}
+
+.tz-gallery .thumbnail {
+    padding: 0;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.tz-gallery img {
+    border-radius: 2px;
+}
+
+.tz-gallery .caption {
+    padding: 26px 30px;
+    text-align: center;
+}
+
+.tz-gallery .caption h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.tz-gallery .caption p {
+    font-size: 12px;
+    color: #7b7d7d;
+    margin: 0;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+/* BOOKING */
+.booking-form {
+    margin-top: 95px;
+    margin-bottom: 30px;
+}
+
+.tb-lantai td {
+    height: 25px;
+    width: 25px;
+}
+
+.kontener {
+    display: block;
+    position: relative;
+    margin: 1px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.kontener input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #2196F3;
+    border-radius: 3px;
+}
+
+.kontener:hover input~.checkmark {
+    background-color: #F7F7F7;
+}
+
+.kontener input:checked~.checkmark {
+    background-color: #FF4406;
+    border: 1px solid #FF4406;
+    border-radius: 3px;
+}
+
+.kontener input:disabled~.checkmark {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: context-menu;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.kontener input:checked~.checkmark:after {
+    display: block;
+}
+
+.cover {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    z-index: 50;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+/* FORMULIR */
+.img-prev {
+    height: 140px;
+    width: 122.667px;
+    border: 1px solid #CED4DA;
+    object-fit: cover;
+}
+
+#image-source {
+    display: none;
+}
+
+/* PANEL ADD */
+.img-panel-add {
+    border: 1px solid #fff;
+    margin: 10px 4px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.img-panel-add:hover {
+    border: 1px solid #CED4DA;
+}
+
+.img-add-panel {
+    max-width: 60px;
+}
+
+input[type="checkbox"][id^="add"] {
+    display: none;
+}
+
+.labels {
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    bottom: -8;
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.img-panel-add-checked {
+    border: 1px solid #CED4DA;
+    background-color: #CED4DA;
+    margin: 10px 4px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.konf-panel {
+    padding-left: 40px;
+    padding-right: 40px;
+}
